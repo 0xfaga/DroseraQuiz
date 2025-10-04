@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drosera Community</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <!-- Hero Header (gradient) -->
+  <header class="hero">
+    <div class="hero-left">
+      <h1>Welcome to Drosera Community Quiz</h1>
+    </div>
+    <div class="hero-right">
+      <img src="drosera_logo.jpg" alt="Drosera Logo">
+    </div>
+  </header>
+
+  <!-- Centered Hero Content -->
+  <section class="hero-center-content">
+    <p>Test your knowledge about Drosera Network and earn a badge!</p>
+    <a href="quiz.html" class="btn">Start Quiz</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p id="date-time"></p>
+    <p>Powered by 0xfaga for Drosera Community</p>
+  </footer>
+
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+      document.getElementById('date-time').textContent = "Current Date & Time: " + now.toLocaleString();
+    }
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+  </script>
+</body>
+</html>

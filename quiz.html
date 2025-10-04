@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drosera Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Login Screen -->
+  <div id="login-screen">
+    <h2>Enter Your Discord Username</h2>
+    <input type="text" id="username" placeholder="Enter Discord Username">
+    <button id="start-btn">Start Quiz</button>
+  </div>
+
+  <!-- Quiz Screen -->
+  <div id="quiz-screen" class="hidden">
+    <div id="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <div id="timer">30</div>
+
+    <div id="question-container">
+      <div id="question-text"></div>
+      <div id="answer-buttons"></div>
+    </div>
+  </div>
+
+  <!-- Result Screen -->
+<div id="result-screen" class="hidden">
+  <h2>Quiz Completed!</h2>
+  <p id="final-score"></p>
+  <p id="badge"></p>
+
+  <!-- Badge Canvas -->
+  <div id="badge-container" class="hidden">
+    <canvas id="badge-canvas" width="400" height="600"></canvas>
+    <br>
+    <button id="download-badge">Download Your Badge</button>
+  </div>
+
+  <button id="restart-btn">Restart Quiz</button>
+</div>
+
+  <!-- Scripts -->
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

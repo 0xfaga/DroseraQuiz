@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #000; /* black background */
+  color: #ffa500; /* orange text */
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 2px solid #ffa500;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+#progress-container {
+  width: 100%;
+  background-color: #333;
+  height: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #ffa500; /* orange */
+  border-radius: 10px;
+  transition: width 0.3s;
+}
+
+#answer-buttons button {
+  display: block;
+  background-color: #222; /* dark gray background */
+  color: #ffa500; /* orange text */
+  width: 250px;
+  margin: 10px auto;
+  padding: 12px 0;
+  border-radius: 8px;
+  border: 2px solid #ffa500;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#answer-buttons button:hover {
+  background-color: #ffa500; /* orange button on hover */
+  color: #000; /* black text on hover */
+}
+
+#answer-buttons button.correct {
+  background-color: #ff9500; /* bright orange for correct */
+  color: #000;
+}
+
+#answer-buttons button.wrong {
+  background-color: #ff4500; /* red-orange for wrong */
+  color: #000;
+}
+
+#timer {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  background-color: #111;
+  width: 80px;
+  margin: 20px auto;
+  padding: 10px 0;
+  border-radius: 50%;
+  color: #ffa500;
+}
+
+#badge {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 15px;
+  color: #ffa500;
+}
+
+#quiz-screen, #login-screen, #result-screen {
+  max-width: 500px;
+  margin: auto;
+  background-color: #111; /* dark card */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255,165,0,0.5); /* orange shadow */
+}
+
+@media (max-width: 500px) {
+  #quiz-screen, #login-screen, #result-screen {
+    width: 90%;
+    padding: 15px;
+  }
+
+  #answer-buttons button {
+    width: 90%;
+    font-size: 1rem;
+  }
+}
